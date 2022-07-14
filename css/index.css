@@ -1,28 +1,31 @@
 /*
-The designs were created to the following widths:
-
 - Mobile: 375px
 - Desktop: 1440px
 
-### Primary
+Dark cyan: hsl(158, 36%, 37%)
+Cream: hsl(30, 38%, 92%)
+Very dark blue: hsl(212, 21%, 14%)
+Dark grayish blue: hsl(228, 12%, 48%)
+White: hsl(0, 0%, 100%)
 
-- Dark cyan: hsl(158, 36%, 37%)
-- Cream: hsl(30, 38%, 92%)
+font-family: "Montserrat";
+font-family: "Fraunces";
+*/
 
-### Neutral
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/Montserrat-Italic.ttf);
+    src: url(../assets/Montserrat-Soft.ttf);
+}
 
-- Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%)
-
-### Font
-
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weights: 500, 700
-
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700  */
-
+@font-face {
+    font-family: "Fraunces";
+    /* src: url(../assets/); */
+    src: url(../assets/Fraunces_120pt_Soft-Black.ttf);
+    src: url(../assets/Fraunces_120pt_Soft-Bold.ttf);
+    src: url(../assets/Fraunces_120pt_Soft-Regular.ttf);
+}
+    
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +37,7 @@ body{
     height: 100vh;
     font-size: 14px;
     position: relative;
-    background-color: hsl(30, 38%, 92%);
+    background-color: hsl(30, 38%, 92%);    
 }
 
 .body-wrapper{
@@ -54,6 +57,7 @@ body{
     box-shadow: 3px 3px 5px #00000040;
     border-radius: 15px;
     overflow: hidden;
+    
 }
 
 .container{
@@ -71,7 +75,7 @@ body{
 }
 
 .container-text{
-    padding: 15px;
+    padding: 30px;
 }
 
 .container-img{
@@ -86,15 +90,30 @@ body{
 }
 
 .container h1{
-    font-weight: bold;
+    color: hsl(225, 16%, 10%);
+    /* letter-spacing: 1px; */
+    font-family: "Fraunces";
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 900;
 }
 
 .container h2{
-
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    letter-spacing: 1.8px;
+    line-height: 23px;
+    font-family: "Fraunces";
+    margin: 1.3rem 0 1.3rem 0;
 }
 
 .container h3{
     text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-family: "Montserrat";
+    margin-bottom: 1rem;
 }
 
 .container .price{
